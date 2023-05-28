@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El mejor juego FPS</title>
-    <link rel="stylesheet" href="estilos.css" />
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="Multimedia\Imágenes\bluepurple_favicon.png"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="functions.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El mejor juego FPS</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Multimedia\Imágenes\bluepurple_favicon.png">
+  <script src="functions.js"></script>
+  <style>
+    /* Estilos adicionales para la vista móvil */
+    @media (max-width: 600px) {
+      /* Estilos para el encabezado */
+      header {
+        text-align: center;
+      }
+
+      /* Estilos para la navegación */
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* Estilos para el contenido principal */
+      main {
+        padding: 10px;
+      }
+
+      /* Estilos para el formulario de contacto */
+      form {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
     <video autoplay loop muted>
-      <source src="Multimedia\Imágenes\wallpaper.webm" type="video/webm" />
+      <source src="Multimedia/Imágenes/wallpaper.webm" type="video/webm">
     </video>
-    <header>
-      <h1>VALORANT</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="https://miweb.com/juego">Juego</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Acerca de</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <section>
-          <h2>Ultimas noticias</h2>
-          <h3>DESAFÍA LOS LÍMITES</h3>
-          <p>
-            Combina tu estilo y experiencia en un escenario global y
-            competitivo. Tienes 13 rondas para atacar y defender tu lado con
-            armas precisas y habilidades tácticas. Además, al contar con una
-            sola vida por ronda, tendrás que pensar más rápido que tu oponente
-            si quieres sobrevivir. Enfréntate a enemigos en los modos
-            competitivo y normal, así como en Deathmatch y Spike Rush.
-          </p>
-          <h3>LA CREATIVIDAD ES TU MEJOR ARMA.</h3>
-          <p>
-            Más allá de las armas y las balas, podrás elegir a un agente dotado
-            de habilidades versátiles, veloces y letales con las que crearás
-            oportunidades para sobresalir. Ningún agente se jugará igual, ni
-            ningún momento memorable se verá igual.
-          </p>
-        </section>
-      </article>
-      <aside>
-        <ul>
-          <h2>Enlaces recomendados</h2>
-          <li><a href="https://playvalorant.com/es-mx/agents/">Agentes</a></li>
-          <li><a href="https://playvalorant.com/es-mx/maps/">Mapas</a></li>
-          <li><a href="https://playvalorant.com/es-mx/arsenal/">Armas</a></li>
-        </ul>
-      </aside>
-      <form id="myForm">
-        <h2>Formulario de contacto</h2>
-        <div>
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div>
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div>
-          <label for="message">Mensaje:</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <div>
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
-    </main>
-    <footer>
-      <p>Derechos reservados &copy; 2023</p>
-    </footer>
-  </body>
+  </div>
+  <header>
+    <h1>VALORANT</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="https://valorantesports.com">Esports</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <section>
+        <h2>Últimas noticias</h2>
+        <h3>DESAFÍA LOS LÍMITES</h3>
+        <p>
+          Combina tu estilo y experiencia en un escenario global y competitivo. Tienes 13 rondas para atacar y defender tu lado con armas precisas y habilidades tácticas. Además, al contar con una sola vida por ronda, tendrás que pensar más rápido que tu oponente si quieres sobrevivir. Enfréntate a enemigos en los modos competitivo y normal, así como en Deathmatch y Spike Rush.
+        </p>
+        <h3>LA CREATIVIDAD ES TU MEJOR ARMA.</h3>
+        <p>
+          Más allá de las armas y las balas, podrás elegir a un agente dotado de habilidades versátiles, veloces y letales con las que crearás oportunidades para sobresalir. Ningún agente se jugará igual, ni ningún momento memorable se verá igual.
+        </p>
+      </section>
+    </article>
+    <aside>
+      <h2>Enlaces recomendados</h2>
+      <ul>
+        <li><a href="https://playvalorant.com/es-mx/agents/">Agentes</a></li>
+        <li><a href="https://playvalorant.com/es-mx/maps/">Mapas</a></li>
+        <li><a href="https://playvalorant.com/es-mx/arsenal/">Armas</a></li>
+      </ul>
+    </aside>
+    <form id="myForm">
+      <h2>Formulario de contacto</h2>
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <p>Derechos reservados &copy; 2023</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
 </html>
