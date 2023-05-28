@@ -1,0 +1,210 @@
+/* Estilos para el header */
+
+@font-face {
+  font-family: "VALORANT";
+  src: url("VALORANT-Regular.ttf") format("truetype");
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center; /* Para centrar verticalmente */
+  align-items: center; /* Para centrar horizontalmente */
+  padding: 0 20px; /* Padding de 20px a cada lado */
+}
+
+body {
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0 30px; /* 30px de margen a la izquierda y a la derecha */
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "VALORANT";
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* para que el video se ajuste al tamaño de la pantalla */
+  mix-blend-mode: screen; /* para ajustar el color del texto al color de fondo */
+  z-index: -1; /* para asegurarse de que el video esté detrás del contenido */
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 100px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 25px;
+  font-family: "VALORANT";
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para el main */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+article {
+  flex: 1;
+  margin-right: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: left;
+  height: 500px;
+}
+
+article h2 {
+  font-size: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+aside {
+  display: grid;
+  flex: 1;
+  margin-right: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: left;
+  height: 500px;
+}
+
+aside h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+aside li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+aside a {
+  display: block;
+  padding: 5px;
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+aside a:hover {
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  margin-top: auto;
+}
+
+/* Estilos para el formulario de contacto */
+form#myForm {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form#myForm h2 {
+  text-align: center;
+}
+
+form#myForm div {
+  margin-bottom: 20px;
+}
+
+form#myForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form#myForm input,
+form#myForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form#myForm button[type="submit"] {
+  background-color: #ccc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Agregar transición de color */
+}
+
+form#myForm button[type="submit"]:hover {
+  background-color: #555; /* Cambiar color al hacer hover */
+  color: white;
+}
+
+/* Estilos adicionales (opcional) */
+
+form#myForm div:last-child {
+  text-align: center;
+}
